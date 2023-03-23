@@ -14,6 +14,7 @@ const Registro = registermodel(sequelize, Sequelize);
 sequelize.sync({ force: false })
     .then(() => {
         console.log('Tablas sincronizadas');
+        
     });
 
 module.exports = { Usuario, Registro };

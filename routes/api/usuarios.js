@@ -3,7 +3,7 @@ const router = require('express').Router();
 const {Usuario} = require('../../db');
 
 // Get all users
-router.get('/', async (req, res) => {
+router.get('/get', async (req, res) => {
     const usuarios = await Usuario.findAll();
     res.json(usuarios);
 });
