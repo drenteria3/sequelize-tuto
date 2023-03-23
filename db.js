@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const usuariosmodel = require('./models/usuarios');
 const registermodel = require('./models/register');
 
-const sequelize = new Sequelize('sequelize-tuto', 'diego', 'manases3572', {
+const sequelize = new Sequelize('sequelize-tuto', 'user_name', 'password', {
     host: 'localhost',
     dialect: 'mysql'
 });
